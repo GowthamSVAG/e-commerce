@@ -3,7 +3,7 @@ const dotenv=require('dotenv');
 const path=require('path');
 const app=express();
 const cors=require('cors');
-dotenv.config({path:path.join(__dirname,'config','config.env')})
+require('dotenv').config();
 const product=require('./Router/product');
 const order=require('./Router/order');
 const connectDatabase=require('./config/connectDataBase')
